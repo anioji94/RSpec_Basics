@@ -29,5 +29,11 @@ sa = StringAnalyzer.new
       expect(sa.has_vowels? test_string).to be false
     end 
     
+    it "should return true for capital letters" do
+      test_string = "AEIOU"
+      expect(sa.has_vowels? test_string).to be true
+    end 
+
+    # looks like we're pretty good on this 
   end
 end
